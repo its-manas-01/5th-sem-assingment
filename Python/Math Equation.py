@@ -18,11 +18,11 @@ else :
     
     if d == 0:
         x1 = -b / (2*a)
-        print("The roots are real and equal:",x1)
+        print(f"The roots are real and equal:{x1}")
     elif d >0:
         x1 = ((-b - d) / (2*a))
         x2 = (-b + d) / (2*a)
-        print("The roots are real :",x1,",",x2)
+        print(f"The roots are real :{x1},{x2}")
     else:
         x1 = ((-b - d) / (2*a))
         x2 = (-b + d) / (2*a)
