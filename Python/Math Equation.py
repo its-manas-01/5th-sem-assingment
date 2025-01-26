@@ -4,8 +4,6 @@ a = int(input("Enter the value of a:-"))
 b = int(input("Enter the value of b:-"))
 c = int(input("Enter the value of c:-"))
 
-# print("Your entered value is:-\n ",a,"x2",b,"x",c,"= 0")
-
 x = int(math.pow(b,2) - 4*(a*c))
 
 if x < 0 :

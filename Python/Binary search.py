@@ -6,13 +6,14 @@ def bubblesort(bubble):
     return bubble
                 
 def binarysearch(bubble, key,low, high):
-    mid = (high + low)//2
-    if bubble[mid] == key:
-        return True
-    elif bubble[mid] < key:
-        return binarysearch(bubble, key, mid + 1, high)
-    else:
-        return binarysearch(bubble, key, low, mid - 1)
+    while low <= high:
+        mid = low + ( high - low ) // 2
+        if bubble[mid] == key:
+            return True
+        elif bubble[mid] < key:
+            low = mid +1
+        else:
+            high = mid -1
 
 n = int(input("Enter the number of elements: "))
 bubble = []
