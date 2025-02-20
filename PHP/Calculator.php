@@ -16,27 +16,27 @@
             switch ($sign):
                 case '+' :
                     $result = $first + $last;
-                    echo "$result";
+                    echo $result;
                     break;
                 case '-' :
                     $result = $first - $last;
-                    echo "$result";
+                    echo $result;
                     break;
                 case '*' :
                     $result = $first * $last;
-                    echo "$result";
+                    echo $result;
                     break;
                 case '/' :
                     if ($last == 0) {
-                        echo 'Error: Division by zero';
+                        echo "Error: Division by zero";
                         exit;
                     }
                     $result = $first / $last;
-                    echo "$result";
+                    echo $result;
                     break;
                 case '%' :
                     if ($last == 0) {
-                        echo 'Error: Division by zero';
+                        echo "Error: Division by zero";
                         exit;
                     }
                     $result1 = $first % $last;
@@ -45,18 +45,18 @@
                     break;
                 case '^' :
                     $result = pow($first, $last);
-                    echo "$result";
+                    echo $result;
                     break;
                 case '//' :
                     if ($last == 0) {
-                        echo 'Error: Division by zero';
+                        echo "Error: Division by zero";
                         exit;
                     }
                     $result = floor($first / $last);
-                    echo "$result";
+                    echo $result;
                     break;
                 default :
-                    echo 'Error: Invalid operator';
+                    echo "Error: Invalid operator";
                     exit;
             endswitch;
         ?>
