@@ -29,7 +29,7 @@
             }
             elseif ($marks>=45)
             {
-                echo "Your average marks is :-$marks<br> Grade is :-2nd idvision";
+                echo "Your average marks is :-$marks<br> Grade is :-2nd dvision";
             }
             elseif ($marks>=33)
             {
